@@ -1,15 +1,17 @@
 [features]
 seeds = false
 skip-lint = false
-[programs.localnet]
-mygifproject = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+[programs.devnet]
+mygifproject = "DfvbZwDYrz12dwVnRtkubCMwL74iL8AE87e8sPvVWSxC"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "/home/mahmudsudo/.config/solana/id.json"
 
+
 [scripts]
-test = "yarn run mocha -t 1000000 tests/"
+test = "node tests/mygifproject.js"
+
